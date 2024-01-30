@@ -1,0 +1,8 @@
+@model ProjectName.Models.Example
+
+<h2>Details</h2>
+<hr />
+<h3>@Html.DisplayNameFor(model => model.NAME): @Html.DisplayFor(model => model.NAME)<h3>
+<p>@Html.ActionLink("Edit Order", "Edit", new { id = Model.ClassNameId })</p>
+<p>@Html.ActionLink("Delete Item", "Delete", new { id = Model.ClassNameId })</p>
+<p>@Html.ActionLink("Back to orders", "Index")</p>

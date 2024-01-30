@@ -1,0 +1,10 @@
+@model ProjectName.Models.Example
+
+@using (Html.BeginForm())
+{
+  @Html.LabelFor(model => model.NAME)
+  @Html.TextBoxFor(model => model.NAME)
+  <input type="submit" value="Button Text" />
+}
+
+<p>@Html.ActionLink("Link Text", "Index")</p>

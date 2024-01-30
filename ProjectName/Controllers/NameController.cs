@@ -13,6 +13,6 @@ namespace ExampleName.Controllers
     }
 
     [Route("/")]
-    public string Example() { View(); }
+    public string Index() { return View(); }
   }
 }

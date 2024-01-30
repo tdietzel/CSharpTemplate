@@ -1,0 +1,16 @@
+@model ProjectName.Models.Example
+
+<h2>Edit</h2>
+
+<h4>Edit: @Html.DisplayFor(model => model.NAME)</h4>
+
+@using (Html.BeginForm())
+{
+  @Html.HiddenFor(model => model.ClassNameId)
+
+  @Html.LabelFor(model => model.NAME)
+  @Html.EditorFor(model => model.NAME)
+
+  <input type="submit" value="Save" />
+}
+<p>@Html.ActionLink("Link Text", "Index")</p>
