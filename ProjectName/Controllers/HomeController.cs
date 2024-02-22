@@ -3,16 +3,16 @@ using ExampleName.Models;
 
 namespace ExampleName.Controllers
 {
-  public class ExampleNameController : Controller
+  public class HomeController : Controller
   {
     private readonly ProjectNameContext _db;
 
-    public ExampleNameController(ProjectNameContext db)
+    public HomeController(ProjectNameContext db)
     {
       _db = db;
     }
 
     [Route("/")]
-    public string Index() { return View(); }
+    public ActionResult Index() { return View(); }
   }
 }
